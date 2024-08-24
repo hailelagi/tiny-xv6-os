@@ -4,6 +4,7 @@ version = "0.1.0"
 edition = "2018"
 
 [dependencies]
+bootloader = "0.9"
 
 [profile.dev]
 panic = "abort"
@@ -19,3 +20,6 @@ panic = "abort"
 
 [target.'cfg(target_os = "macos")']
 rustflags = ["-C", "link-args=-e __start -static -nostartfiles"]
+
+[target.'cfg(target_os = "none")']
+runner = "bootimage runner"
