@@ -7,3 +7,6 @@
 [submodule "ostep-code"]
 	path = ostep-code
 	url = https://github.com/remzi-arpacidusseau/ostep-code.git
+[submodule "xv6-public"]
+	path = xv6-public
+	url = https://github.com/mit-pdos/xv6-public
